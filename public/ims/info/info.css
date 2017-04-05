@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+ul, li {
+	list-style: none;
+}
+
+.info-nav {
+	overflow: hidden;
+    color: #FC2212;
+}
+
+.info-nav li {
+	float: left;
+	margin-right: 10px;
+}
+
+
+.user {
+	overflow: hidden;
+}
+
+.user-nav {
+	margin-right: 20px;
+}
+
+.user-nav, .user-detail {
+	float: left;
+    margin-left: 50px;
+}
+/*电影模块*/
+.movie {
+	overflow: hidden;
+}
+
+.movie-nav {
+	margin-right: 20px;
+}
+
+.movie-nav, .movie-detail {
+	float: left;
+}
+#movieList td{
+    text-align: center;
+}
+/*电影模块*/
+.studios{
+    overflow: hidden;
+}
+.studios-nav {
+    margin-right: 20px;
+}
+.studios-nav , .studios-detail{
+    float: left;
+}
+/*放映厅模块*/
+.theaterBox{
+    position: relative;
+}
+.theaterName{
+    display: none;
+    position:absolute;
+    left:260px;
+    top:60px;
+}
+#theaterName{
+    width:90px;
+}
+/*放映厅结束*/
+
+/*排片模块*/
+.schedule{
+    overflow: hidden;
+}
+.schedule-nav {
+    margin-right: 20px;
+}
+.schedule-nav , .schedule-detail{
+    float: left;
+}

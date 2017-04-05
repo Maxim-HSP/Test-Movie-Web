@@ -1,0 +1,590 @@
+body {
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+li{
+     float: left;
+}
+a{
+    text-decoration: none;
+}
+/*1 顶部导航栏外联main-HF.css*/
+.banner{
+    width: 100%;
+    min-width: 1200px;
+    background: url(../img/details-page/banner_bg.png) #392f59 no-repeat 50%;
+}
+.banner-inner{
+    width: 1200px;
+    margin: 0 auto;
+    height: 376px;
+    position: relative;
+}
+/*海报模块*/
+.poster-container{
+    width: 300px;
+    float: left;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+    z-index: 9;
+}
+.poster-shadow{
+    position: relative;
+    margin: 0 30px;
+    width: 240px;
+    height: 330px;
+    padding-bottom: 40px;
+    background:url(../img/details-page/poster-shadow.png) no-repeat bottom;
+}
+.poster-shadow img{
+    border: 4px solid #fff;
+    height: 322px;
+    width: 232px;
+}
+/*电影版本标签样式外联main-HF.css*/
+.movie-ver{
+    top:15px;
+}
+/*主要信息文字模块*/
+.info-container{
+    float: left;
+    margin-right: 30px;
+    margin-top: 70px;
+    position: relative;
+}
+.movie-brief{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.movie-brief h1{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-height: 64px;
+}
+.movie-brief h3{
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 14px;
+}
+.movie-brief p{
+    line-height: 26px;
+}
+/*主要按钮模块*/
+.button-area{
+    height: 86px;
+    width: 260px;
+}
+.wish-button{
+    float: left;
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    background-color: #756189;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    border-radius: 2px;
+}
+.wish-icon{
+    background: url(../img/details-page/wish-icon.png) no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 2px;
+}
+.JScore-icon{
+    background: url(../img/details-page/JScore-icon.png) no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 2px;
+}
+.ticket-button{
+    display: inline-block;
+    color: #fff;
+    background-color: #df2d2d;
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 2px;
+}
+/*评分、票房信息模块*/
+.status-area{
+    position: absolute;
+    top: 96px;
+    left: 342px;
+    width: 130px;
+}
+.status-item{
+    margin-bottom: 12px;
+    color: #fff;
+}
+.status-title{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.score{
+    float: left;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 28px;
+    color: #ffc600;
+}
+/*
+--星级条用一白一黄的两个星星图标背景实现，设置x轴重复，用百分比设置黄色星的宽度调整星级。
+--放大或缩小页面时可能会使星级显示错误。
+*/
+.star-bg{
+    float: right;
+    background: url(../img/details-page/star-bg.png) repeat-x;
+    width: 60px;
+    height: 12px;
+    margin-right: 15px;
+    position: relative;
+}
+.star-active{
+    width: 94%;
+    height: 12px;
+    background: url(../img/details-page/star-icon.png) repeat-x;
+}
+.profession{
+    width: 68%;
+}
+.score-people{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 8px;
+}
+.officebox{
+    font-size: 28px;
+    margin-top: -5px;
+}
+.officebox span{
+    font-size: 12px;
+    padding-left: 4px;
+}
+/*3 主详情区域*/
+.main-container{
+    width: 1200px;
+    margin: 80px auto 0;
+    overflow: hidden;
+}
+article{
+    width: 730px;
+    float: left;
+}
+/*3-1 详情导航*/
+.details-guide{
+    height: 28px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 40px;
+}
+.details-item{
+    float: left;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    line-height: 100%;
+    border-bottom: 2px solid transparent;
+}
+/*单独定义active与不可用false样式*/
+.details-guide .active{
+    color: #ef4238;
+    border-bottom-color: #ef4238;
+}
+.details-guide .false{
+    color: #999;
+    cursor: not-allowed;
+}
+/*单位详情模块*/
+.details-module{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 60px;
+}
+.details-head{
+    border-left: 4px solid #ef4238;
+    padding-left: 6px;
+}
+.details-head h3{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+}
+.details-head a{
+    float: right;
+    font-size: 14px;
+    color: #999;
+    padding-right: 14px;
+}
+.details-content{
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+    line-height: 26px;
+}
+/*单位“演职员”列表样式*/
+.staff-item{
+    float: left;
+}
+.staff-title{
+    display: block;
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #333;
+}
+.actorImg,.directorImg{
+    width: 128px;
+    height: 170px;
+}
+
+/*以下进行的内外边距调整是为了在标题与人物图像对齐的情况下，每个照片能分隔开*/
+.staff-item{
+    margin-left: 30px;
+}
+.staff-item:first-child{
+   margin-left: 0;
+}
+.staff-item ul{
+    margin-left: -20px;
+}
+.staff-item li{
+    float: left;
+    width: 128px;
+    margin-left: 20px;
+}
+.staff-details{
+    display: block;
+    text-align: center;
+}
+.staff-name{
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    line-height: 25px;
+}
+.staff-info{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #666;
+    display: inline-block;
+    width: 128px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*“图集”样式*/
+.album-container>div{
+    float: left;
+    overflow: hidden;
+}
+.pic-L{
+    width: 465px;
+    height: 258px;
+    overflow: hidden;
+}
+.pic-L img{
+    width: 465px;
+}
+.pic-S{
+    margin: 0 0 6px 6px;
+    width: 126px;
+    height: 126px;
+    overflow: hidden;
+}
+.pic- img{
+    width: 126px;
+}
+/*“热门短评”模块*/
+.comment-module{
+    padding-top: 20px;
+    margin-top: -20px;
+}
+.comment-entry{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 1px solid #ef4238;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #ef4238!important;
+    -webkit-transition-property: background color;
+    transition-property: background color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.comment-entry:hover{
+    background: #EF4238;
+    color: #FFFFFF!important;
+}
+/*单位短评样式*/
+.comment-item{
+    margin-top: 20px;
+}
+.head-contain{
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.head-icon{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+.head-icon img{
+    width: 50px;
+}
+.lv3-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: url(../img/details-page/lv3-icon.png) no-repeat;
+}
+.comment-item .main{
+    margin-left: 70px;
+}
+.main .main-header{
+    position: relative;
+    font-size: 16px;
+    width: 660px;
+}
+.main-header .user{
+    margin-top: 2px;
+}
+.main-header .name{
+    vertical-align: middle;
+    color: #333;
+}
+.main-header .tag{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #7cc6f9;
+    border-radius: 2px;
+    color: #7cc6f9;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.main-header .time{
+    margin-top: 4px;
+    color: #999;
+}
+/*“星级条”样式*/
+.score-star .half-star{
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+}
+
+.score-star .half-star.left{
+    margin-left: 2px;
+    background: url(../img/details-page/half-star-dark.png)
+}
+
+.score-star .half-star.left.active{
+    background: url(../img/details-page/half-star.png)
+}
+.score-star .half-star.right{
+    margin-right: 2px;
+    background: url(../img/details-page/half-star-right-dark.png)
+}
+.score-star .half-star.right.active{
+    background:url(../img/details-page/half-star-right.png)
+}
+/*点赞模块*/
+.approve{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.approve-icon{
+    cursor: pointer;
+    margin-top: -6px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/details-page/approve-icon.png)
+}
+.approve-num{
+    font-size: 14px;
+    color: #999;
+}
+/*主要文字内容*/
+.comment-text{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    line-height: 26px;
+    font-size: 14px;
+}
+.comment-content li:last-child .comment-text{
+    border-bottom: 1px solid transparent;
+}
+/*侧边栏区域*/
+aside{
+    float: right;
+    width: 360px;
+}
+
+/*相关资讯模块*/
+.news-item{
+    overflow: hidden;
+    margin: 0 0 16px;
+}
+.news-pic{
+    display: inline-block;
+    background-color: #efefef;
+    position: relative;
+    width: 140px;
+    height: 86px;
+    overflow: hidden;
+    float: left;
+}
+.news-content{
+    overflow: hidden;
+    position: relative;
+    margin-left: 150px;
+    height: 86px;
+}
+.news-title{
+    display: block;
+    line-height: 1.2;
+    font-size: 16px;
+    margin-top: 4px;
+    height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+.news-status{
+    color: #999;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    white-space: nowrap;
+}
+.news-status .view-icon{
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    background: url(../img/details-page/news-view-icon.png) no-repeat top;
+    background-size: 16px 14px;
+    vertical-align: bottom;
+    margin: 0 2px 0 5px;
+}
+.news-status .comments-icon{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(../img/details-page/news-comments-icon.png) no-repeat top;
+    background-size: 16px 14px;
+    vertical-align: bottom;
+    margin: 0 2px 0 5px;
+}
+/*相关电影模块*/
+/*电影列表*/
+.movie-list{
+    overflow: hidden;
+    margin: -19px 0 20px -18px;
+    padding-bottom: 30px;
+}
+.movie-list dd{
+    margin: 20px 0 0 17px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.movie-cover{
+    position: relative;
+    display: inline-block;
+    background-color: #fcfcfc;
+    width: 106px;
+    height: 145px;
+    overflow: hidden;
+}
+.movie-cover img{
+    width: 100%;
+}
+/*电影文本信息样式*/
+.movie-name{
+    width: 106px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.movie-name a{
+    color: #333;
+}
+.movie-score{
+    color: #ffb400;
+    width: 106px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px 0 5px;
+}
+.movie-socre .integer{
+    font-size: 18px;
+}
+.movie-socre .fraction{
+    font-size: 14px;
+}
+/*鼠标移上样式*/
+.movie-list dd{
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+.movie-list dd:hover{
+    box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+}
+/*底部外联main-HF.css*/

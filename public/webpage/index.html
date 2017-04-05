@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>猫眼电影 - 一网打尽好电影</title>
+    <meta name="Author" content="" />
+<!--    root模块静态资源加载-->
+    <link rel="icon" href="img/logo_fav.png" sizes="16x16 32x32">
+    <link rel="stylesheet" type="text/css" href="./CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css"> 
+<!--    seaJS模块化引入-->
+    <script type="text/javascript" src="modules/bin/sea.js"></script>
+    <script type="text/javascript" src="modules/config.js"></script>
+</head>
+
+<body>
+<!--1 头部区域-->
+<header>
+        <div class="header-inner">
+            <a class="site-logo" href="index.html"></a>
+            <!--城市选择模块-->
+            <div class="city-container">
+                <div class="city-selected">
+                    <div class="city-name"> 成都 <span class="caret"></span> </div>
+                </div>
+                <div class="city-list"></div>
+            </div>
+            <!--主页导航-->
+            <nav class="guide">
+                <ul class="guide-bar">
+                    <li><a id="homeBtn" href="#">首页</a></li>
+                    <li><a id="movieBtn" href="#">电影</a></li>
+                    <li><a id="rankingBtn" href="#">榜单</a></li>
+                    <li><a id="hotBtn" href="#">热点</a></li>
+                </ul>
+            </nav>
+            <!--用户信息、搜索、APP下载模块-->
+            <div class="user-info">
+                <div class="user-icon"> <img src="img/home-page/user-icon.png" alt=""> <span class="caret"></span> </div>
+                <ul class="user-menu">
+                    <li><a id="loginBtn" href="">登录</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <input class="search" type="text" placeholder="找影视剧、影人、影院">
+                <input class="submit-search" type="submit" value=""> </form>
+            <div class="app-download">
+                <a href=""> <i class="phone-icon"></i> <span class="apptext">APP下载</span> <span class="caret"></span>
+                    <div class="download-icon">
+                        <p class="DLtext-1">扫码下载APP</p>
+                        <p class="DLtext-2">选座更优惠</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+</header>
+<!--1-1 头部占位符，将主内容排列到header之下-->
+<div class="header-placeholder"></div>
+<!--    二级模块-->
+    <div id="AppContainer"></div>
+    
+<!--    底部区域-->
+<footer>
+        <p class="friendly-link">
+            友情链接：
+            <a href="" target="_blank">美团网</a>
+            <span></span>
+            <a href="" target="_blank">美团下载</a>
+        </p>
+        <p class="page-info">
+            &copy;2016 猫眼电影 maoyan.com 
+            <a href="" target="_blank">京ICP证160733号</a>
+            <a href="" target="_blank">京ICP备16022489号-1</a>  
+            京公网安备 11010502030881号
+            <a href="" target="_blank">网络文化经营许可证</a>
+            <a href="" target="_blank">电子公告服务规则</a>
+        </p>
+        <p>北京猫眼文化传媒有限公司</p>
+    </footer>
+</body>
+</html>

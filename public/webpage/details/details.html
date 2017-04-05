@@ -1,0 +1,438 @@
+<!--静态资源加载-->
+<link rel="stylesheet" type="text/css" href="CSS/details-page.css">
+<!--模块节点-->
+<!--    2 主要信息展示横幅模块-->
+<div class="banner">
+    <div class="banner-inner">
+        <!--           海报模块结构-->
+        <div class="poster-container">
+            <div class="poster-shadow"> <img id="MovieCover" src="" alt="">
+                <div class="movie-ver"> <i class="ver-text">自定义标签</i> </div>
+            </div>
+        </div>
+        <!--            文字信息、影片状态和按钮模块结构-->
+        <div class="info-container">
+            <div class="movie-brief">
+                <h1>你的名字。</h1>
+                <h3>君の名は。</h3>
+                <p>剧情,爱情,动画</p>
+                <p>日本 / 107分钟</p>
+                <p>2016-12-02大陆上映</p>
+            </div>
+            <div class="button-area">
+                <a class="wish-button" href=""> <i class="wish-icon"></i> <span>想看</span> </a>
+                <a class="wish-button" href=""> <i class="JScore-icon"></i> <span>评分</span> </a> <a class="ticket-button" href="">立即购票</a> </div>
+            <div class="status-area">
+                <!--                   单位"状态模块"-->
+                <div class="status-item">
+                    <p class="status-title">用户评分</p> <span class="score">9. 4</span>
+                    <div class="star-bg">
+                        <div class="star-active"></div>
+                    </div> <span class="score-people">21.1万人评分</span> </div>
+                <!--                    单位"状态模块"结束-->
+                <div class="status-item">
+                    <p class="status-title">专业评分</p> <span class="score">6. 8</span>
+                    <div class="star-bg">
+                        <div class="star-active profession"></div>
+                    </div> <span class="score-people">24人评分</span> </div>
+                <div class="status-item">
+                    <p class="status-title">累计票房</p>
+                    <p class="officebox">3. 14 <span>亿</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    3 主详情区域-->
+<div class="main-container">
+    <article>
+        <nav class="details-guide"> <a class="details-item active" href="">介绍</a> <a class="details-item" href="">演职人员</a> <a class="details-item false" href="">奖项</a> <a class="details-item" href="">图集</a> </nav>
+        <!--            单位详情模块/剧情简介-->
+        <div class="details-module">
+            <div class="details-head">
+                <h3>剧情介绍</h3> <a href=""><span class="arrow-link"></span></a> </div>
+            <div class="details-content" id="synopsis"> 影片讲述了一名少年和一名少女在梦中相遇邂逅的奇幻爱情故事。在千年一遇的彗星造访地球的一个月前，身居日本深山小镇的少女宫水三叶（上白石萌音 配音）每天都过着忧郁烦燥的生活，而正处于青春叛逆期的她对大都市的憧憬向往与日俱增。然而不久，三叶做了一个变成男孩子的梦，眼前的这里有着陌生的房间、朋友和她梦寐以求的宽敞街道。三叶虽然感到迷茫困惑，但能够尽情享受朝思暮想的都市生活的她觉得神清气爽。与此同时，远在他乡的东京少年立花泷（神木隆之介 配音）也有一个奇怪的梦境，睁开睡眼的他发现变成一名不知名姓女孩的自己身处一个从未去过的深山小镇。两人惊醒时发现各自回到了自己的身体，但每逢两人入睡或半梦半醒之际，他们就会交换对调身份。一头雾水的三叶决定循着线索找寻立花泷，而立花泷也试着跟三叶沟通，冥冥之中互换身份的两人不约而同地竭尽所能设法找寻对方，而彼此间的了解也因此渐渐加深，虽未曾相见却早已似曾相识的两人暗生情愫，一段青春季节的奇妙物语随之展开。跨越时空梦境的阻隔，终在现实世界邂逅的两人上演了一幕青涩浪漫的奇遇暖心之恋。岂料一场突如其来的意外将两人的一切美好定格在梦醒之际…… </div>
+        </div>
+        <!--            单位详情模块结束-->
+        <!--            演职人员模块-->
+        <div class="details-module">
+            <div class="details-head">
+                <h3>演职人员</h3> <a href="">全部<span class="arrow-link">></span></a> </div>
+            <div class="details-content">
+                <div class="staff-item first-staff"> <span class="staff-title">导演</span>
+                    <ul>
+                        <li>
+                            <a class="link-placeholder" href=""> <img class="directorImg" src="img/details-page/staff1.jpg" alt=""> </a>
+                            <div class="staff-details"> <a class="staff-name" href="">新海诚</a>
+                                <p class="staff-info">《秒速5厘米》导演</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="staff-item"> <span class="staff-title">演员</span>
+                    <ul>
+                        <li>
+                            <a class="link-placeholder" href=""> <img class="actorImg" src="img/details-page/staff2.jpg" alt=""> </a>
+                            <div class="staff-details"> <a class="staff-name" href="">上白石萌音</a>
+                                <p class="staff-info">饰：宫水三叶（日语配音）</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link-placeholder" href=""> <img class="actorImg" src="img/details-page/staff3.jpg" alt=""> </a>
+                            <div class="staff-details"> <a class="staff-name" href="">佟心竹</a>
+                                <p class="staff-info">饰：宫水三叶（国语配音）</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link-placeholder" href=""> <img class="actorImg" src="img/details-page/staff4.jpg" alt=""> </a>
+                            <div class="staff-details"> <a class="staff-name" href="">神木隆之介</a>
+                                <p class="staff-info">饰：立花泷（日语配音）</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="link-placeholder" href=""> <img class="actorImg" src="img/details-page/staff5.jpg" alt=""> </a>
+                            <div class="staff-details"> <a class="staff-name" href="">皇贞季</a>
+                                <p class="staff-info">饰：立花泷（国语配音）</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--            “图集”模块-->
+        <div class="details-module">
+            <div class="details-head">
+                <h3>图集</h3> <a href="">全部<span class="arrow-link">></span></a> </div>
+            <div class="details-content">
+                <div class="album-container">
+                    <div class="pic-L"><img src="img/details-page/pic1.jpg" alt=""></div>
+                    <div class="pic-S"><img src="img/details-page/pic2.jpg" alt=""></div>
+                    <div class="pic-S"><img src="img/details-page/pic3.jpg" alt=""></div>
+                    <div class="pic-S"><img src="img/details-page/pic4.jpg" alt=""></div>
+                    <div class="pic-S"><img src="img/details-page/pic5.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!--            “热门短评”模块-->
+        <div class="details-module comment-module">
+            <div class="details-head">
+                <h3>热门短评</h3> <a class="comment-entry" href="">写短评</a> </div>
+            <div class="details-content">
+                <ul class="comment-content">
+                    <!--                      单位“短评”模块-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                    <li class="comment-item">
+                        <div class="head-contain">
+                            <div class="head-icon"><img src="img/details-page/user-head1.jpg" alt=""></div> <i class="lv3-icon"></i> </div>
+                        <div class="main">
+                            <div class="main-header clearfix">
+                                <div class="user"> <span class="name">少年抠脚至死</span> <span class="tag">购</span> </div>
+                                <div class="time" title="2016-12-02 02:10:33"> <span>3天前</span>
+                                    <!--                                   用户星级条-->
+                                    <ul class="score-star clearfix">
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right active"></i> </li>
+                                        <li> <i class="half-star left active"></i><i class="half-star right"></i> </li>
+                                        <li> <i class="half-star left"></i><i class="half-star right"></i> </li>
+                                    </ul>
+                                </div>
+                                <div class="approve"> <i class="approve-icon"></i> <span class="approve-num">2338</span> </div>
+                            </div>
+                            <div class="comment-text"> 每一帧都是壁纸，1080p的感觉和320p完全不一样，剧情在双重推进下进入迷茫的找寻部分，最后的相遇恰到好处(不回头就要砍人了)，恰到好处的泪点和笑点交互也不至于泪崩，新海诚在剧情上下了蛮大功夫，情节与BGM相互联系，满满的感动！ 最后把观众影评顶起来，让国内某些专业影评滚蛋。 </div>
+                        </div>
+                    </li>
+                    <!--                       单位“短评”模块结束位置-->
+                </ul>
+            </div>
+        </div>
+    </article>
+    <!--        侧边栏区域-->
+    <aside class="clearfix">
+        <!--           相关资讯模块-->
+        <div class="details-module">
+            <div class="details-head">
+                <h3>相关资讯</h3> <a href=""><span class="arrow-link"></span></a> </div>
+            <div class="details-content">
+                <dl>
+                    <dd class="news-item">
+                        <a class="news-pic" href="news-page.html"> <img src="img/details-page/news-pic1.jpg" alt=""> </a>
+                        <div class="news-content"> <a class="news-title" href="news-page.html">《你的名字。》新海诚风格转变是受结婚和大地震影响</a>
+                            <div class="news-status"> <span class="souce">猫眼电影</span> <span><i class="view-icon"></i>4059</span> <span><i class="comments-icon"></i>19</span> </div>
+                        </div>
+                    </dd>
+                    <dd class="news-item">
+                        <a class="news-pic" href="news-page.html"> <img src="img/details-page/news-pic2.jpg" alt=""> </a>
+                        <div class="news-content"> <a class="news-title" href="news-page.html">一周专业口碑榜：《你的名字。》成近期动画电影最佳</a>
+                            <div class="news-status"> <span class="souce">猫眼电影</span> <span><i class="view-icon"></i>4059</span> <span><i class="comments-icon"></i>19</span> </div>
+                        </div>
+                    </dd>
+                    <dd class="news-item">
+                        <a class="news-pic" href="news-page.html"> <img src="img/details-page/news-pic3.jpg" alt=""> </a>
+                        <div class="news-content"> <a class="news-title" href="news-page.html">《你的名字。》4天票房3亿，破纪录不停</a>
+                            <div class="news-status"> <span class="souce">猫眼电影</span> <span><i class="view-icon"></i>4059</span> <span><i class="comments-icon"></i>19</span> </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <!--            相关电影模块-->
+        <div class="details-module">
+            <div class="details-head">
+                <h3>相关电影</h3> <a href=""><span class="arrow-link"></span></a> </div>
+            <div class="details-content">
+                <dl class="movie-list">
+                    <dd>
+                        <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a>
+                        <div class="movie-name"> <a href="" target="_blank">疯狂动物城</a> </div>
+                        <div class="movie-score"> <i class="integer">8</i> <i class="fraction">.7</i> </div>
+                    </dd>
+                    <dd>
+                        <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a>
+                        <div class="movie-name"> <a href="" target="_blank">你的名字。</a> </div>
+                        <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                    </dd>
+                    <dd>
+                        <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a>
+                        <div class="movie-name"> <a href="" target="_blank">她的名字。</a> </div>
+                        <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                    </dd>
+                    <dd>
+                        <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a>
+                        <div class="movie-name"> <a href="" target="_blank">他的名字。</a> </div>
+                        <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.7</i> </div>
+                    </dd>
+                    <dd>
+                        <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a>
+                        <div class="movie-name"> <a href="" target="_blank">我的名字。</a> </div>
+                        <div class="movie-score"> <i class="integer">8</i> <i class="fraction">.5</i> </div>
+                    </dd>
+                    <dd>
+                        <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a>
+                        <div class="movie-name"> <a href="" target="_blank">还有谁的名字。</a> </div>
+                        <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.9</i> </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </aside>
+</div>

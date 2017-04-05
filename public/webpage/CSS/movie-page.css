@@ -1,0 +1,266 @@
+body {
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+li{
+     float: left;
+}
+a{
+    text-decoration: none;
+}
+/*1 顶部导航栏外联main-HF.css*/
+.guide-bar li:nth-child(2){
+    background-color: #EF4238;
+}
+.guide-bar li:nth-child(2) a{
+    color: #FFFFFF
+}
+/*2 榜单导航区*/
+.rank-guide{
+    background-color: #47464a;
+    height: 60px;
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+}
+/*备注此处将ul设为行内块，并用a标签填充，父级背景块设置text-align使ul整体自动居中*/
+.rank-guide ul{
+    display: inline-block;
+    overflow: hidden;
+}
+.rank-guide a{
+    display: block;
+    font-size: 16px;
+    color: #999;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+    position: relative;
+    
+}
+.rank-guide a:hover{
+    color: #fff;
+}
+/*定义active的导航项目的样式*/
+.rank-guide .active{
+    cursor: default;
+    color: #ef4238;
+}
+.rank-guide .active:hover{
+    color: #ef4238;
+}
+/*为active的导航项目添加小三角*/
+.rank-guide .active:before{
+    content: "";
+    width: 2px;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 53px;
+    border-bottom: 7px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: none;
+}
+/*3 主内容区*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.container article{
+    width: 1120px;
+    margin: auto;
+    overflow: hidden;
+}
+/*电影“类型、区域、年代”导航栏*/
+.movie-guide{
+    border: 1px solid #e5e5e5;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+/*定义每个分栏的下边框，并取消最后一个分栏的下边框*/
+.movie-guide dd{
+    border-bottom: 1px dotted #e5e5e5;;
+}
+.movie-guide dd:last-child{
+    border-bottom: 0;
+}
+/*边框内容*/
+.movie-guide .type,.movie-guide .area, .movie-guide .years{
+    padding: 10px 0;
+}
+.MG-title{
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    color: #999;
+    font-size: 14px;
+}
+.guide-content{
+    margin-left: 40px;
+}
+.guide-content li{
+    border-radius: 14px;
+    padding: 2px 8px;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 14px;
+    -webkit-transition: border .1s;
+    transition: border .1s;
+}
+.guide-content li a{
+    color: #333;
+    -webkit-transition: color .1s;
+    transition: color .1s;
+}
+.guide-content li:hover{
+    border: 1px solid #ef4238;
+}
+.guide-content li:hover a{
+    color: #ef4238;
+}
+/*单独定义电影类型导航栏active项目样式*/
+.guide-content .active{
+    background: #f34d41!important;
+}
+.guide-content .active a{
+    cursor: default!important;
+    color: #fff!important; 
+}
+/*3-2 电影海报区域*/
+/*排序方式选择模块*/
+.movie-sort{
+    margin-top: 40px;
+    overflow: hidden;
+    padding-left: 2px;
+}
+.movie-sort li{
+    display: inline-block;
+    height: 16px;
+    line-height: 18px;
+    margin-right: 30px;
+}
+.movie-sort span{
+    font-size: 14px;
+    vertical-align: top;
+    color: black;
+}
+.movie-sort i{
+    display: inline-block;
+    vertical-align: top;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    background: url(../img/movie-page/sort-icon.png) no-repeat;
+}
+.movie-sort .active{
+    cursor: default;
+}
+.movie-sort .active i{
+    background: url(../img/movie-page/sort-active.png) no-repeat;
+}
+/*电影列表*/
+.movie-list{
+    overflow: hidden;
+    margin-left:-25px;
+    padding-bottom: 30px;
+}
+.movie-list dd{
+    margin: 25px 0 0 26px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.movie-cover{
+    display: inline-block;
+    background-color: #fcfcfc;
+    width: 160px;
+    height: 220px;
+    overflow: hidden;
+}
+/*电影版本外联main-HF.css*/
+/*电影文本信息样式*/
+.movie-name{
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.movie-name a{
+    color: #333;
+}
+.movie-score{
+    color: #ffb400;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px 0 5px;
+}
+.movie-socre .integer{
+    font-size: 18px;
+}
+.movie-socre .fraction{
+    font-size: 14px;
+}
+/*鼠标移上样式*/
+.movie-list dd{
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+.movie-list dd:hover{
+    box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+}
+/*3-2-3 电影列表页码选择模块*/
+.movie-pages{
+    width: 100%;
+    text-align: center;
+}
+.page-list{
+    display: inline-block;
+}
+.page-list li{
+    display: inline-block;
+    height: 30px;
+    margin: 0 4px;
+    border: 1px solid #d8d8d8;
+    line-height: 30px;
+    text-align: center;
+    color: #999;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+}
+.page-list li:hover{
+    border-color: #ef4238;  
+}
+.page-list li a{
+    display: block;
+    padding: 0 12px;
+    color: #333;
+}
+/*单独定义active页码样式、sep分隔项目样式*/
+.page-list .active{
+    border-color: #ef4238;
+    background-color: #ef4238;
+    cursor: default;
+}
+.page-list .active a{
+    color: #fff;
+}
+.sep{
+    padding: 0 12px;
+}
+/*底部区域外联main-HF.css*/

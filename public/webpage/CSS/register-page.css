@@ -1,0 +1,155 @@
+a{
+    text-decoration: none;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #E02025
+}
+.top{
+    width: 970px;
+    margin: auto;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.site-logo{
+    display: inline-block;
+    float: left;
+    height: 40px;
+    width: 133px;
+    background: url(../img/meituan.png);
+    background-position: -536px -722px
+}
+article{
+    margin: 0 auto 30px;
+    padding-top: 30px;
+    width: 980px;
+    min-height: 300px;
+    overflow: hidden;
+}
+.inputDIV{
+    padding: 8px 0;
+}
+.inputDIV label{
+    display:inline-block; 
+    width: 100px;
+    padding-top: 6px;
+    font-size: 14px;
+    text-align: right;
+    color: #333;
+}
+.inputDIV span{
+    display: inline-block;
+    margin-left: 4px;
+    padding: 6px 0;
+    line-height: 24px;
+    font-size: 12px;
+    color: #999;
+    vertical-align: top;
+}
+.input-content{
+    width: 248px;
+    height: 24px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    line-height: 24px;
+    outline: none;
+}
+.input-content:focus{
+    border-color: #EF4238
+}
+.phoneCODE{
+    margin-left: 108px;
+    padding: 1px 8px 0;
+    font-size: 12px;
+    color: #333;
+    background-color: #dedede;
+    border: 1px solid #e3e3e3;
+    border-bottom: 1px solid #aaa;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(top,#f7f7f7,#dedede);
+    background: linear-gradient(to bottom,#f7f7f7,#dedede);
+    line-height: 1.5;
+    outline: none
+}
+.phoneCODE:active{
+    background: -webkit-linear-gradient(bottom,#f7f7f7,#dedede);
+    background: linear-gradient(to top,#f7f7f7,#dedede);
+}
+.password-Strength{
+    margin-left: 108px;
+    overflow: hidden;
+}
+.Strength{
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    width: 85px;
+    color: #fff;
+    background-color: #EDEDED;
+    border-right: 2px solid #fff;
+}
+.confirmArea{
+    overflow: hidden;
+    padding: 10px 0 12px;
+}
+.confirm{
+    margin-left: 108px;
+    border: #e02025;
+    color: #FFF;
+    background: -webkit-linear-gradient(top,#ec454a 0,#e02025 100%);
+    background: linear-gradient(to bottom,#ec454a 0,#e02025 100%);
+    display: inline-block;
+    padding: 7px 20px 6px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    outline: none;
+    position: relative;
+}
+.confirm-A{
+    display: inline-block;
+    width: 190px;
+    height: 34px;
+    position: absolute;
+    left: 108px;
+    text-decoration: none;
+}
+.term{
+    margin-left: 108px;
+    display: inline-block;
+    float: left;
+    color: #ec454a;
+    font-size: 13px;
+}
+.term:hover{
+    text-decoration: underline;
+}
+footer{
+    border-top: 1px solid #EEE;
+    padding: 20px 0 0;
+    text-align: center;
+    height: 40px;
+}
+footer a{
+    display: inline-block;
+    color: #999999;
+    font-size: 13px;
+    padding-right: 10px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+    color: #999999;
+    font-size: 13px;
+}

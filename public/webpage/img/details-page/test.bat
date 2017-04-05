@@ -1,0 +1,1 @@
+ "C:\user-Program Files (x86)\Chrome\chrome.exe" http://localhost:3000

@@ -1,0 +1,193 @@
+<!-- 二级模块静态资源-->
+<link rel="stylesheet" href="./CSS/home-page.css">
+<!--2 主横幅展示区-->
+<div class="banner">
+    <div class="banner-content">
+        <a href=""> <img class="pic-banner" src="./img/home-page/banner1.jpg" alt="banner">
+            <a class="prev" href=""></a>
+            <a class="next" href=""></a>
+            <div id="bannerPointWrap">
+                
+            </div>
+        </a>
+    </div>
+</div>
+<!--3 主内容区域-->
+<div class="container">
+    <article>
+        <!--3-1-1 “正在热映”模块，电影海报列表-->
+        <div class="pane-1">
+            <div class="p1-head">
+                <h1>正在热映（<span id="onging-sum"></span>）</h1> <a class="all" href="">全部<span class="arrow-link"> ></span></a> </div>
+            <!--动态加载列表-->
+            <dl class="movie-list" id="ongoingList">
+                
+            </dl>
+        </div>
+        <!--            3-1-2 “即将上映”模块-->
+        <div class="pane-1 p2-head">
+            <div class="p1-head p2-head">
+                <h1>即将上映（<span id="coming-sum"></span>）</h1><a class="all" href="">全部<span class="arrow-link"> ></span></a> </div>
+            <!--动态加载列表-->
+            <dl class="movie-list" id="comingList">
+                
+            </dl>
+        </div>
+        <!--            3-1-3 “热播电影”模块-->
+        <div class="pane-1">
+            <div class="p1-head">
+                <h1>热播电影</h1><a class="all" href="">全部<span class="arrow-link"> ></span></a>
+                <ul>
+                    <li><a class="kind" href="">爱情</a></li>
+                    <li><a class="kind" href="">喜剧</a></li>
+                    <li><a class="kind" href="">动作</a></li>
+                    <li><a class="kind" href="">恐怖</a></li>
+                    <li><a class="kind" href="">动画</a></li>
+                </ul>
+            </div>
+            <dl class="movie-list p3-list" id="hotList">
+                
+            </dl>
+        </div>
+    </article>
+    <!--3-2 侧边栏-->
+    <aside>
+        <!--3-2-1 今日票房模块-->
+        <div class="pane-1">
+            <div class="p1-head">
+                <h1>今日票房</h1> </div>
+            <ul class="rank-content tody-boxoffice" id="boxofficeList">
+                <!--票房排行最高项-->
+                <li class="rank-top">
+                    <a class="movieBtn" href="">
+                        <div class="RKT-left"> <i class="RKT-icon"></i> <img class="RK-cover" id="BoxTopImg" src="" alt=""> </div>
+                        <div class="RKT-right">
+                            <p class="RKT-movieName" id="BoxTopName"></p>
+                            <p class="RK-boxOffice"><span id="topBoxNum"></span>万</p>
+                        </div>
+                    </a>
+                </li>
+                <!--动态生成普通项目排行列表-->
+            </ul>
+        </div>
+        <!--  3-2-1-1 今日大盘模块-->
+        <div class="today-total">
+            <h3>今日大盘</h3>
+            <div class="text-content">
+                <p><span class="num" id="BoxSum"></span>万 <a href="">查看更多<span class="arrow-link"> ></span></a></p>
+                <p class="meta-info">北京时间 <span id="nowTime">12:30:00</span><span class="info-right">猫眼专业版实时票房数据</span></p>
+            </div>
+        </div>
+        <!--3-2-2 最受期待模块-->
+        <div class="pane-1 RK-expect">
+            <div class="p1-head">   
+                <h1>最受期待</h1> <a class="rank-all-link" href="ranking-page.html">查看完整榜单<span class="arrow-link"> ></span></a> </div>
+            <ul class="rank-content">
+                <li class="rank-top">
+                    <a href="" target="_blank">
+                        <div class="RKT-left"> <i class="RKT-icon"></i> <img class="RK-cover" src="./img/home-page/RKWish-cover.jpeg" alt=""> </div>
+                        <div class="RKT-right">
+                            <p class="RKT-movieName">长城</p>
+                            <p class="RK-time">上映时间：2016-12-16</p>
+                            <p class="RK-wish"><span>187496</span>人想看</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="rank-SmPane">
+                    <a href="" target="_blank"> <i class="RK-Num">2</i> <img src="./img/home-page/RKWish-cover2.jpg" alt="">
+                        <p class="RKT-movieName">摆渡人</p>
+                        <p class="RK-wish"><span>133256</span>人想看</p>
+                    </a>
+                </li>
+                <li class="rank-SmPane">
+                    <a href="" target="_blank"> <i class="RK-Num">3</i> <img src="./img/home-page/RKWish-cover3.jpeg" alt="">
+                        <p class="RKT-movieName">大闹天竺</p>
+                        <p class="RK-wish"><span>129426</span>人想看</p>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>4</i> <span class="RK-movieName">西游记·伏魔篇</span> <span class="RK-boxOffice BO-normal"><span>92926</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>5</i> <span class="RK-movieName">28岁未成年</span> <span class="RK-boxOffice BO-normal"><span>97622</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>6</i> <span class="RK-movieName">那年夏天你去了哪里</span> <span class="RK-boxOffice BO-normal"><span>33996</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>7</i> <span class="RK-movieName">加勒比海盗5：死无对证</span> <span class="RK-boxOffice BO-normal"><span>207013</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>8</i> <span class="RK-movieName">功夫瑜伽</span> <span class="RK-boxOffice BO-normal"><span>32085</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>9</i> <span class="RK-movieName">纯洁心灵·逐梦演艺圈</span> <span class="RK-boxOffice BO-normal"><span>52759</span>人想看</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>10</i> <span class="RK-movieName">爱上试睡师</span> <span class="RK-boxOffice BO-normal"><span>13941</span>人想看</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--3-2-3 TOP100模块-->
+        <div class="pane-1 RK-top100">
+            <div class="p1-head RK-expect">
+                <h1>TOP100</h1> <a class="rank-all-link" href="">查看完整榜单<span class="arrow-link"> ></span></a> </div>
+            <ul class="rank-content tody-boxoffice">
+                <!--               票房排行最高项-->
+                <li class="rank-top">
+                    <a href="" target="_blank">
+                        <div class="RKT-left"> <i class="RKT-icon"></i> <img class="RK-cover" src="./img/home-page/bawangbieji.jpg" alt=""> </div>
+                        <div class="RKT-right">
+                            <p class="RKT-movieName">霸王别姬</p>
+                            <p class="RK-boxOffice"><span>9.6</span>分</p>
+                        </div>
+                    </a>
+                </li>
+                <!--                普通项目排行列表-->
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i class="sec">2</i> <span class="RK-movieName">肖申克的救赎</span> <span class="RK-boxOffice BO-normal"><span>9.5</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i class="tri">3</i> <span class="RK-movieName">这个杀手不太冷</span> <span class="RK-boxOffice BO-normal"><span>9.5</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>4</i> <span class="RK-movieName">罗马假日</span> <span class="RK-boxOffice BO-normal"><span>9.1</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>5</i> <span class="RK-movieName">阿甘正传</span> <span class="RK-boxOffice BO-normal"><span>9.4</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>6</i> <span class="RK-movieName">泰坦尼克号</span> <span class="RK-boxOffice BO-normal"><span>9.5</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>7</i> <span class="RK-movieName">龙猫</span> <span class="RK-boxOffice BO-normal"><span>9.2</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>8</i> <span class="RK-movieName">教父</span> <span class="RK-boxOffice BO-normal"><span>9.3</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>9</i> <span class="RK-movieName">唐伯虎点秋香</span> <span class="RK-boxOffice BO-normal"><span>9.2</span>分</span>
+                    </a>
+                </li>
+                <li class="rank-normal">
+                    <a href="" target="_blank"> <i>10</i> <span class="RK-movieName">千与千寻</span> <span class="RK-boxOffice BO-normal"><span>9.3</span>分</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div>

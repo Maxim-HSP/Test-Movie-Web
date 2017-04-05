@@ -1,0 +1,23 @@
+define(function(require,exports){
+    var $=require('$');
+    //绑定顶部导航按钮
+    exports.start=function(){
+        $("#homeBtn").on("click",function(e){
+            e.preventDefault();
+            //此处虽然发送空路径仍能跳转到home模块，但地址栏不会改变(pushstate在load之前)
+            require("router").go("#/home");
+        });
+        $("#movieBtn").on("click",function(e){
+            e.preventDefault();
+            require("router").go("#/movie");
+        });
+        $("#rankingBtn").on("click",function(e){
+            e.preventDefault();
+            require("router").go("#/ranking");
+        });
+        $("#loginBtn").on("click",function(e){
+            e.preventDefault();
+            require("router").go("#/login")
+        })
+    }
+})

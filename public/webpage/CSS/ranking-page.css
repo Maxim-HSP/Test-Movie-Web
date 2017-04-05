@@ -1,0 +1,184 @@
+/*主导航按钮样式激活*/
+.guide-bar li:nth-child(3){
+    background-color: #EF4238;
+}
+.guide-bar li:nth-child(3) a{
+    color: #FFFFFF
+}
+/*2 榜单导航区*/
+.rank-guide{
+    background-color: #47464a;
+    height: 60px;
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+}
+/*备注此处将ul设为行内块，并用a标签填充，父级背景块设置text-align使ul整体自动居中*/
+.rank-guide ul{
+    display: inline-block;
+    overflow: hidden;
+}
+.rank-guide a{
+    display: block;
+    font-size: 16px;
+    color: #999;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 40px;
+    position: relative;
+    
+}
+.rank-guide a:hover{
+    color: #fff;
+}
+/*定义active的导航项目的样式*/
+.rank-guide .active{
+    cursor: default;
+    color: #ef4238;
+}
+.rank-guide .active:hover{
+    color: #ef4238;
+}
+/*为active的导航项目添加小三角*/
+.rank-guide .active:before{
+    content: "";
+    width: 2px;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 53px;
+    border-bottom: 7px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: none;
+}
+/*主内容区*/
+.container{
+    width: 1200px;
+    margin: auto;
+}
+article{
+    overflow: hidden;
+    width: 950px;
+    margin: auto;
+    margin-top: 70px;
+}
+/*顶部文字*/
+.update-time,.rank-rule{
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+.update-time span{
+    color: #ffb400;
+    margin-left: 4px;
+}
+/*榜单列表*/
+.rank-content{
+    margin-top: 40px;
+}
+/*单位榜单项目基础样式*/
+dd{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.rank-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #f7f7f7;
+    font-size: 18px;
+    color: #999;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+.fir-icon{
+    background: url(../img/ranking-page/rank-top.png)
+}
+.sec-icon{
+    background: #ffb400;
+    color: #fff;
+}
+.img-link{
+    display: inline-block;
+    width: 160px;
+    height: 220px;
+    margin-left: 80px;
+    position: relative;
+    float: left;
+}
+/*右部电影信息模块*/
+.rank-item{
+    display: inline-block;
+    width: 680px;
+    margin-left: 30px;
+    height: 219px;
+    float: right;
+    line-height: 219px;
+    border-bottom: 1px solid #e5e5e5;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s
+}
+.rank-item:hover{
+    background-color: #F3F3F3;
+    box-shadow: -30px 0 10px 30px #F3F3F3;
+}
+.item-content{
+    vertical-align: middle;
+    display: inline-block;
+    width: 680px;
+/*    font-size: 0;*/
+    line-height: 1;
+}
+.rank-info{
+    font-size: 16px;
+    display: inline-block;
+    width: 420px;
+    vertical-align: middle;
+}
+.movie-name a{
+    font-size: 26px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 420px;
+    display: block;
+}
+.movie-star{
+    margin-top: 18px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.movie-time{
+    margin-top: 8px;
+    color: #999;
+}
+.rank-score{
+    color: #ffb400;
+    display: inline-block;
+    text-align: right;
+    width: 240px;
+    margin-top: 10px;
+    padding-right: 15px;
+    float: right;
+}
+.rank-score .integer {
+    font-size: 56px;
+    font-weight: 700;
+}
+.rank-score .fraction {
+    font-size: 26px;
+    font-weight: 700;
+}
+/*底部区域外联main-HF.css*/

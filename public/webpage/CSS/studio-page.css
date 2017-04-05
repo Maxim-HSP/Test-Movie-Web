@@ -1,0 +1,331 @@
+/*电影详情*/
+.page{
+	margin-top: 20px;
+	width: 100%;
+    min-width: 1220px;
+	overflow: hidden;
+}
+.page1{
+	border: 1px solid #999;
+	overflow: hidden;
+	width: 1200px;
+	margin: auto;
+	position: relative;
+}
+.movie-container{
+	width: 1198px;
+	margin: auto;
+	border: 1px solid #eee;
+	margin-bottom: 10px;
+	background: #f6f6f6;
+}
+.heave{
+	border-right: 1px solid #eee;
+	width: 900px;
+	display: inline-block;
+	background: #fff;
+}
+.heave>h2{
+	padding: 16px 0 16px 200px;
+}
+.page>span{
+	display: inline-block;
+}
+.size{
+	padding-left: 40px;
+	color: #f76120;
+	font-size: 30px;
+}
+.size2{
+	color: #f76120;
+	font-size: 18px;
+}
+.size3{
+	color: #faa27b;
+	font-size: 18px;
+    font-style: normal
+}
+.starLevel{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    background: url(../img/studio-page/starLevel.jpg);
+}
+.starCover{
+    display: inline-block;
+    height: 20px;
+    background: url(../img/studio-page/starLevel.jpg) 0 -21px;
+}
+.movie-body{
+	width: 400px;
+	font-size: 14px;
+	margin-left: 200px;
+}
+.movie-body>p{
+	margin-bottom: 6px;
+    line-height: 1.8;
+    color: #999;
+    font-size: 12px;
+}
+.movie-body>P>span{
+    color: #666;
+}
+.p5{
+    display: inline-block;
+    float: left;
+}
+.actor_text{
+    width: 360px;
+    display: inline-block ;
+    margin-bottom: 6px;
+    color: #666 !important;
+}
+.page1>img{
+	position: absolute;
+	top: 18px;
+	left: 16px;
+    height: 234px;
+    width: 166px;
+	border: 1px solid #eee;
+}
+.movie-foot{
+	margin-left: 16px;
+	padding: 20px 0;
+	border-top: 1px solid #eee;
+}
+.movie-foot>p{
+	font-size: 12px;
+	font-family: "Hiragino Sans GB"," Microsoft YaHei","WenQuanYi Micro Hei",arial,sans-serif;
+	color: #666;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+
+/*上映影院*/
+.studiotime{
+	width: 1200px;
+	margin: auto;
+	padding-bottom: 20px;
+	border: 1px solid #999;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.studiotime>h4{
+	margin-left: 16px;
+	padding: 20px 0;
+}
+.day_wrap>p{
+	margin-left: 30px;
+	padding-bottom: 20px;
+	font-size: 14px;
+	display: inline-block;
+	font-weight: 600;
+	line-height: 26px;
+}
+.day_wrap>span{
+    display: inline-block;
+    padding: 0 4px;
+    height: 20px;
+    margin-left: 20px;
+    color: #666;
+	font-weight: 100;
+    border-radius: 2px;
+    border: 1px transparent solid;
+    transition: all .2s;
+    cursor: pointer;
+}
+.day_wrap>span:hover{
+    border: 1px #2bb8aa solid;
+    color: #2bb8aa;
+}
+.dayActive{
+    background-color: #2bb8aa;
+    border: 1px #2bb8aa solid;
+    color: #fff !important;
+}
+.studiotime>p>span{
+	color: #666;
+	font-weight: 100;
+	border-radius: 4px;
+	padding: 0 4px;
+}
+.studiotime>span:hover{
+	cursor: pointer;
+	background-color: #ef4238;
+    color:#fff;
+}
+.day_wrap{
+    margin-bottom: 10px;
+}
+.studioList{
+    margin:0px 30px 0 30px;
+    border-top: 1px solid #999;
+}
+.studio{
+	position: relative;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: 1px dashed #999;
+}
+.studio:hover{
+    background-color: #f9f9f9;
+}
+.studio>p{
+	line-height: 26px;
+}
+.studioName{
+	color: #666;
+	font-weight: 600;
+    font-size: 14px;
+}
+.studioName:hover{
+	color: #ef4238;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.studioAdd{
+	color: #999;
+	font-size: 14px;
+}
+.studioAdd2{
+	color: #000;
+    font-size: 12px;
+}
+.studioTime2{
+	color: #999;
+	font-size: 14px;
+}
+.studioTime3{
+	color: #666;
+    font-size: 12px;
+}
+.price{
+	position: absolute;
+	top: 40px;
+	right: 340px;
+	font-size: 14px;
+}
+.price1{
+	color: #f76120;
+}
+.price2{
+	color: #f76120 !important;
+	font-weight: 600;
+}
+.price3{
+	color: #666;
+}
+.btn-small{
+	padding: 3px 20px;
+    background: linear-gradient(to bottom,#ff8901,#f76120);
+    border-color: #da3f02;
+    border-radius: 2px;
+	color: #fff;
+    border-width: 0 0 1px;
+	font-size: 14px;
+    cursor: pointer;
+}
+.btn-small.theaterBtn{
+    position: absolute;
+	top: 35px;
+	right: 200px;
+}
+.btn-small:hover{
+    box-shadow: 0px 0px 5px #888888;
+}
+.btn-small:active{
+    border-color: #f76120;
+    background-image: linear-gradient(to bottom,#f76120,#ff8101);
+    cursor: pointer;
+}
+
+/*放映厅模块*/
+.theaterList{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 750px;
+    margin-top: -205px;
+    margin-left: -400px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 5px solid #BBBBBB;
+    background-color: rgba(33, 33, 33, 0.88);
+    z-index: 50;
+    
+/*    color: white;*/
+    overflow: hidden;
+}
+.TL_head{
+    display: block;
+    height: 35px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+}
+.closeListBtn{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    font-family: 微软雅黑;
+    line-height: 15px;
+    margin-top: 3px;
+    padding: 5px 6px;
+    border-radius: 50%;
+    border: 2px solid #656565;
+    cursor: pointer;
+    transition: background .2s,border-color .2s;
+}
+.closeListBtn:hover{
+    background: #E5342A;
+    border-color: white;
+}
+.listArea{
+    position: relative;
+    width: 100%;
+    height: 365px;
+    border-top: 5px solid #BBBBBB;
+}
+.listScroll{
+    position: absolute;
+    width: 688px;
+    max-height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -140px 0 0 -344px;
+    overflow-y: scroll;
+    border: 1px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.72);
+}
+.listArea table{
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    font-size: 12px;
+}
+.theaterList thead{
+    font-size: 14px;
+    font-weight: 700;
+    background: #f7f7f7;
+    color: #666;
+}
+.theaterList thead tr th{
+    padding: 7px 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.theaterList tr td{
+    text-align: center;
+    color: #414141; 
+}
+.theaterList tbody tr{
+    border-bottom: 1px solid #e5e5e5 ;
+    height: 52px;
+    line-height: 52px;
+}

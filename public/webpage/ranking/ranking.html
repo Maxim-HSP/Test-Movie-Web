@@ -1,0 +1,175 @@
+<!--加载静态资源-->
+<link rel="stylesheet" type="text/css" href="CSS/ranking-page.css">
+<!--模块节点-->
+<!--    2 榜单导航区-->
+<nav class="rank-guide">
+    <ul>
+        <li><a class="active" href="">热映口碑榜</a></li>
+        <li><a href="">最受期待榜</a></li>
+        <li><a href="">国内票房榜</a></li>
+        <li><a href="">北美票房榜</a></li>
+        <li><a href="">TOP100榜</a></li>
+    </ul>
+</nav>
+<!--3 主内容区-->
+<!--   备注，在主内容外设置两个父级框体，container用以居中并设置最小宽度1200px，article用来放置主内容且设置宽度900px，这样在页面被调整缩小时在主内容和浏览器边框留出一定的空白-->
+<div class="container">
+    <article>
+        <p class="update-time">2016-12-03 <span>已更新</span></p>
+        <p class="rank-rule">榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。相关数据来源于“猫眼专业版”及“猫眼电影库”。</p>
+        <dl class="rank-content">
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon fir-icon"></i>
+                <a class="img-link" href="details-page.html"> <img src="img/ranking-page/cover1.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <!--                    item-content将文字内容整合为一个块，再将rank-item设置line-height为其本身高度，再将item-content设置line-height为1取消rank-item的行高值，使文字内容自动居中-->
+                    <!--                   原网页item-content设置font-size为0，分数模块才能和左部信息模块同行。此处改为用右浮动，并且设置padding-rigt为10像素，并降低分数模块宽度以让斜体分数显示完全，以及在背景内显示-->
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="details-page.html">你的名字。</a></p>
+                            <p class="movie-star">主演：上白石萌音,佟心竹,神木隆之介</p>
+                            <p class="movie-time">上映时间：2016-12-02</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">9</i> <i class="fraction">.4</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon sec-icon">2</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover2.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">海洋奇缘</a></p>
+                            <p class="movie-star">主演：奥伊伊·卡瓦略,道恩·强森,Rachel House</p>
+                            <p class="movie-time">上映时间：2016-11-25</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">9</i> <i class="fraction">.1</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon sec-icon">3</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover3.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">神奇动物在哪里</a></p>
+                            <p class="movie-star">主演：埃迪·雷德梅恩,凯瑟琳·沃特斯顿,艾莉森·萨多尔</p>
+                            <p class="movie-time">上映时间：2016-11-25</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">9</i> <i class="fraction">.0</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">4</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover4.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">奇异博士</a></p>
+                            <p class="movie-star">主演：本尼迪克特·康伯巴奇,切瓦特·埃加福特,瑞秋·麦克亚当斯</p>
+                            <p class="movie-time">上映时间：2016-11-04</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">9</i> <i class="fraction">.0</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">5</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover5.png" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">超级快递</a></p>
+                            <p class="movie-star">主演：陈赫,宋智孝,大卫·贝利</p>
+                            <p class="movie-time">上映时间：2016-12-02</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">8</i> <i class="fraction">.8</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">6</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover6.jpeg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">勇士</a></p>
+                            <p class="movie-star">主演：李东学,聂远,于小伟</p>
+                            <p class="movie-time">上映时间：2016-10-14</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">8</i> <i class="fraction">.8</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">7</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover7.jpeg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">佩小姐的奇幻城堡</a></p>
+                            <p class="movie-star">主演：伊娃·格林,阿沙·巴特菲尔德,塞缪尔·杰克逊</p>
+                            <p class="movie-time">上映时间：2016-12-02</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">8</i> <i class="fraction">.7</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">8</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover8.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">名侦探柯南：纯黑的恶梦</a></p>
+                            <p class="movie-star">主演：高山南,天海佑希,林原惠美</p>
+                            <p class="movie-time">上映时间：2016-11-25</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">8</i> <i class="fraction">.7</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">9</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover9.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">间谍同盟</a></p>
+                            <p class="movie-star">主演：布拉德·皮特,玛丽昂·歌迪亚,马修·古迪</p>
+                            <p class="movie-time">上映时间：2016-11-30</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">8</i> <i class="fraction">.4</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--            单位榜单项目结束位置-->
+            <!--           单位榜单项目-->
+            <dd> <i class="rank-icon">10</i>
+                <a class="img-link" href=""> <img src="img/ranking-page/cover10.jpg" alt="你的名字"> </a>
+                <div class="rank-item">
+                    <div class="item-content">
+                        <div class="rank-info">
+                            <p class="movie-name"><a href="">比利·林恩的中场战事</a></p>
+                            <p class="movie-star">主演：乔·阿尔文,克里斯汀·斯图尔特,加内特·赫德兰</p>
+                            <p class="movie-time">上映时间：2016-11-11</p>
+                        </div>
+                        <div class="rank-score"> <i class="integer">8</i> <i class="fraction">.3</i> </div>
+                    </div>
+                </div>
+            </dd>
+            <!--单位榜单项目结束位置-->
+        </dl>
+    </article>
+</div>

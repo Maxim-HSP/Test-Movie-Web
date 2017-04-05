@@ -1,0 +1,364 @@
+body {
+    font-family: Microsoft YaHei,Helvetica,Arial,sans-serif;
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+li{
+     float: left;
+}
+a{
+    text-decoration: none;
+}
+/*2 主内容区域*/
+.main-container{
+    width: 1200px;
+    margin: 60px auto 0;
+    overflow: hidden;
+}
+article{
+    width: 730px;
+    float: left;
+}
+.news-header h1{
+    color: #222;
+    font-size: 36px;
+    line-height: 1;
+}
+.news-subtitle{
+    margin-top: 30px;
+    color: #999;
+    font-size: 14px;
+}
+.view-icon{
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 14px;
+    background: url(../img/news-page/news-view-icon.png) no-repeat top;
+    background-size: 18px 14px;
+}
+/*整体使用两端对齐,图片居中*/
+.news-content{
+    color: #333;
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 40px;
+    text-align: justify;
+}
+.news-content p{
+    margin-bottom: 28px;
+}
+.news-pic{
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+.pic-caption{
+    text-align: center;
+    color: #999999;
+    font-weight: bolder;
+    margin-top: -18px;
+}
+.news-content h1{
+    color: rgb(227, 55, 55);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    line-height: 32px;
+}
+.news-content h2{
+    color: rgb(51, 51, 51);
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 70px
+}
+/*点赞、分享按钮模块---与详情页面相同*/
+.news-button{
+    margin: 60px 0 42px;
+    text-align: center;
+}
+.approve-button,.share-buuton{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+    color: #ef4238;
+    border: 1px solid #fd948e;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.approve-icon-red,.share-icon{
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    background-image: url(../img/news-page/approve-icon.png)
+}
+.share-icon{
+    background-image: url(../img/news-page/share-icon.png)
+}
+/*单位详情模块*/
+.details-module{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 60px;
+}
+.details-head{
+    border-left: 4px solid #ef4238;
+    padding-left: 6px;
+}
+.details-head h3{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    line-height: 18px;
+}
+.details-head a{
+    float: right;
+    font-size: 14px;
+    color: #999;
+    padding-right: 14px;
+}
+.details-content{
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+    line-height: 26px;
+}
+/*“热门短评”模块*/
+.comment-module{
+    padding-top: 20px;
+    margin-top: -20px;
+}
+.comment-entry{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 1px solid #ef4238;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: #ef4238!important;
+    -webkit-transition-property: background color;
+    transition-property: background color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.comment-entry:hover{
+    background: #EF4238;
+    color: #FFFFFF!important;
+}
+/*单位短评样式*/
+.comment-item{
+    margin-top: 20px;
+}
+.head-contain{
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.head-icon{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+.head-icon img{
+    width: 50px;
+}
+.lv3-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: url(../img/details-page/lv3-icon.png) no-repeat;
+}
+.comment-item .main{
+    margin-left: 70px;
+}
+.main .main-header{
+    position: relative;
+    font-size: 16px;
+    width: 660px;
+}
+.main-header .user{
+    margin-top: 2px;
+}
+.main-header .name{
+    vertical-align: middle;
+    color: #333;
+}
+.main-header .tag{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #7cc6f9;
+    border-radius: 2px;
+    color: #7cc6f9;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+.main-header .time{
+    margin-top: 4px;
+    color: #999;
+}
+/*“星级条”样式*/
+.score-star .half-star{
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+}
+
+.score-star .half-star.left{
+    margin-left: 2px;
+    background: url(../img/details-page/half-star-dark.png)
+}
+
+.score-star .half-star.left.active{
+    background: url(../img/details-page/half-star.png)
+}
+.score-star .half-star.right{
+    margin-right: 2px;
+    background: url(../img/details-page/half-star-right-dark.png)
+}
+.score-star .half-star.right.active{
+    background:url(../img/details-page/half-star-right.png)
+}
+/*点赞模块*/
+.comment-item .approve{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.approve-icon{
+    cursor: pointer;
+    margin-top: -6px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/details-page/approve-icon.png)
+}
+.approve-num{
+    font-size: 14px;
+    color: #999;
+}
+/*主要文字内容*/
+.comment-text{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    line-height: 26px;
+    font-size: 14px;
+}
+/*
+.comment-content li:last-child .comment-text{
+    border-bottom: 1px solid transparent;
+}
+*/
+/*查看更多回复*/
+.loading-banner {
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 15px;
+}
+.loading-link{
+    display: inline-block;
+    cursor: pointer;
+    color: #ef4238;
+}
+.londing-icon{
+    margin-left: 5px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 8px;
+    background-image: url(../img/news-page/loading-icon1.png);
+    background-size: 14px 8px;
+}
+/*侧边栏区域*/
+aside{
+    float: right;
+    width: 360px;
+}
+/*相关电影模块*/
+
+/*电影列表*/
+.movie-list{
+    overflow: hidden;
+    margin: -19px 0 20px -18px;
+    padding-bottom: 30px;
+}
+.movie-list dd{
+    margin: 20px 0 0 17px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.movie-cover{
+    position: relative;
+    display: inline-block;
+    background-color: #fcfcfc;
+    width: 106px;
+    height: 145px;
+    overflow: hidden;
+}
+.movie-cover img{
+    width: 100%;
+}
+/*电影文本信息样式*/
+.movie-name{
+    width: 106px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.movie-name a{
+    color: #333;
+}
+.movie-score{
+    color: #ffb400;
+    width: 106px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px 0 5px;
+}
+.movie-socre .integer{
+    font-size: 18px;
+}
+.movie-socre .fraction{
+    font-size: 14px;
+}
+/*鼠标移上样式*/
+.movie-list dd{
+    -webkit-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+.movie-list dd:hover{
+    box-shadow: 0 0 8px #fff, 0 5px 13px rgba(0,0,0,.07);
+}
+/*底部外联main-HF.css*/

@@ -1,0 +1,279 @@
+<!--静态资源加载-->
+<link rel="stylesheet" type="text/css" href="./CSS/movie-page.css">
+<!--模块节点-->
+<!--    2 榜单导航区-->
+<nav class="rank-guide">
+    <ul>
+        <li><a href="">正在热映</a></li>
+        <li><a href="">即将上映</a></li>
+        <li><a class="active" href="">经典影片</a></li>
+    </ul>
+</nav>
+<!--    3 主内容区-->
+<!--   备注，在主内容外设置两个父级框体，container用以居中并设置最小宽度1200px，article用来放置主内容且设置宽度1120px，这样在页面被调整缩小时在主内容和浏览器边框留出一定的空白-->
+<div class="container">
+    <article>
+        <!--           3-1 电影“类型、区域、年代”导航栏-->
+        <dl class="movie-guide">
+            <dd class="type">
+                <p class="MG-title">类型 :</p>
+                <ul class="guide-content">
+                    <li class="active"> <a href="">全部</a> </li>
+                    <li> <a href="">爱情</a> </li>
+                    <li> <a href="">喜剧</a> </li>
+                    <li> <a href="">动画</a> </li>
+                    <li> <a href="">剧情</a> </li>
+                    <li> <a href="">恐怖</a> </li>
+                    <li> <a href="">惊悚</a> </li>
+                    <li> <a href="">科幻</a> </li>
+                    <li> <a href="">动作</a> </li>
+                    <li> <a href="">悬疑</a> </li>
+                    <li> <a href="">犯罪</a> </li>
+                    <li> <a href="">冒险</a> </li>
+                    <li> <a href="">战争</a> </li>
+                    <li> <a href="">奇幻</a> </li>
+                    <li> <a href="">运动</a> </li>
+                    <li> <a href="">家庭</a> </li>
+                    <li> <a href="">古装</a> </li>
+                    <li> <a href="">武侠</a> </li>
+                    <li> <a href="">西部</a> </li>
+                    <li> <a href="">历史</a> </li>
+                    <li> <a href="">传记</a> </li>
+                    <li> <a href="">情色</a> </li>
+                    <li> <a href="">歌舞</a> </li>
+                    <li> <a href="">黑色电影</a> </li>
+                    <li> <a href="">短片</a> </li>
+                    <li> <a href="">纪录片</a> </li>
+                    <li> <a href="">其他</a> </li>
+                </ul>
+            </dd>
+            <dd class="area">
+                <p class="MG-title">区域 :</p>
+                <ul class="guide-content">
+                    <li class="active"> <a href="">全部</a> </li>
+                    <li> <a href="">大陆</a> </li>
+                    <li> <a href="">美国</a> </li>
+                    <li> <a href="">韩国</a> </li>
+                    <li> <a href="">日本</a> </li>
+                    <li> <a href="">中国香港</a> </li>
+                    <li> <a href="">中国台湾</a> </li>
+                    <li> <a href="">泰国</a> </li>
+                    <li> <a href="">印度</a> </li>
+                    <li> <a href="">法国</a> </li>
+                    <li> <a href="">英国</a> </li>
+                    <li> <a href="">俄罗斯</a> </li>
+                    <li> <a href="">意大利</a> </li>
+                    <li> <a href="">西班牙</a> </li>
+                    <li> <a href="">德国</a> </li>
+                    <li> <a href="">波兰</a> </li>
+                    <li> <a href="">澳大利亚</a> </li>
+                    <li> <a href="">伊朗</a> </li>
+                    <li> <a href="">其他</a> </li>
+                </ul>
+            </dd>
+            <dd class="years">
+                <p class="MG-title">年代 :</p>
+                <ul class="guide-content">
+                    <li class="active"> <a href="">全部</a> </li>
+                    <li> <a href="">2017以后</a> </li>
+                    <li> <a href="">2017</a> </li>
+                    <li> <a href="">2016</a> </li>
+                    <li> <a href="">2015</a> </li>
+                    <li> <a href="">2014</a> </li>
+                    <li> <a href="">2013</a> </li>
+                    <li> <a href="">2012</a> </li>
+                    <li> <a href="">2011</a> </li>
+                    <li> <a href="=5">2000-2010</a> </li>
+                    <li> <a href="">90年代</a> </li>
+                    <li> <a href="">80年代</a> </li>
+                    <li> <a href="">70年代</a> </li>
+                    <li> <a href="">更早</a> </li>
+                </ul>
+            </dd>
+        </dl>
+        <!--           3-2 电影海报区域    3-2-1 电影列表排序方式选择模块-->
+        <div class="movie-sort">
+            <ul>
+                <li class="active">
+                    <a href=""> <i></i> <span>按热门排序</span> </a>
+                    <li>
+                        <a href=""> <i></i> <span>按时间排序</span> </a>
+                    </li>
+                    <li>
+                        <a href=""> <i></i> <span>按评价排序</span> </a>
+                    </li>
+            </ul>
+        </div>
+        <!--            3-2-2 电影列表-->
+        <div class="movie-list">
+            <dl>
+                <!--                   单位海报项目样式，可变量有ver-text、v3dimax等-->
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver ver-text">神作</i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <!--                    单位海报项目样式结束位置-->
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a> <i class="movie-ver v3dimax"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">疯狂动物城</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v3d"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v2dimax"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a> <i class="movie-ver v3dimax"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">疯狂动物城</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="details-page.html" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v3d"></i>
+                    <div class="movie-name"> <a href="details-page.html" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v2dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a> <i class="movie-ver v3dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">疯狂动物城</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v3d"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v2dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a> <i class="movie-ver v3dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">疯狂动物城</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v3d"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v2dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a> <i class="movie-ver v3dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">疯狂动物城</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v3d"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v2dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover3.jpg" alt=""> </a> <i class="movie-ver v3dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">疯狂动物城</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v3d"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字。</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver v2dimax"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+                <dd>
+                    <a class="movie-cover" href="" target="_blank"> <img src="img/movie-page/cover1.jpg" alt=""> </a> <i class="movie-ver"></i>
+                    <div class="movie-name"> <a href="" target="_blank">你的名字</a> </div>
+                    <div class="movie-score"> <i class="integer">9</i> <i class="fraction">.5</i> </div>
+                </dd>
+            </dl>
+        </div>
+        <!--           3-2-3 电影列表页码选择模块-->
+        <nav class="movie-pages">
+            <ul class="page-list">
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li class="sep">...</a>
+                </li>
+                <li><a href="">20403</a></li>
+                <li><a href="">下一页</a></li>
+            </ul>
+        </nav>
+    </article>
+</div>

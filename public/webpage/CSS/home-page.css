@@ -1,0 +1,569 @@
+/*主导航按钮样式激活*/
+.guide-bar li:nth-child(1){
+    background-color: #EF4238;
+}
+.guide-bar li:nth-child(1) a{
+    color: #FFFFFF
+}
+/*2 主横幅展示区*/
+/*设定横幅最小宽度，配合边框区域，页面变窄时滚动条不超过右边框*/
+.banner{
+    float: left;
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.banner-content{
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 439px;
+    width: 100%;
+    margin-bottom: 88px!important;
+    width: 1600px;
+    min-width: 1200px;
+    margin: auto;
+    background-color: #47484B;
+}
+/*前后调整按钮*/
+.prev{
+    display: block;
+    width: 48px;
+    height: 68px;
+    position: absolute;
+    top: 168px;
+    left: 50px;
+    background-position: center;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.banner-content:hover .prev{
+    background: url(../img/home-page/downlo1ad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: HSLA(0,0%,100%,.3);
+    box-shadow: 0 0 1px #ccc;
+}
+.next{
+    display: block;
+    width: 48px;
+    height: 68px;
+    position: absolute;
+    top: 168px;
+    right: 50px;
+    background-position: center;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+.banner-content:hover .next{
+    background: url(../img/home-page/nload.png);
+    background-color: HSLA(0,0%,100%,.3);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 1px #ccc;
+}
+/*横幅索引按钮*/
+#bannerPointWrap{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.pointSlide{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.pointSlide button{
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    padding: 5px;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.pointSlide button:before{
+    width: 20px;
+    height: 20px;
+    font-family: slick;
+    font-size: 35px;
+    line-height: 20px;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #e5e5e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '\2022';
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.pointSlide:hover button:before{
+    color:#EC443F;
+}
+.PS_active button:before{
+    color:#EC443F;
+    opacity:1;
+}
+/*3 主内容区*/
+.container{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+article{
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 18px;
+}
+/*
+3-1-1 主内容第一框体-正在热映。
+同时定义主内容区各个模块的基础样式结构。
+*/
+.pane-1{
+    width: 750px;
+    margin-bottom: 80px;
+}
+.p1-head{
+    position: relative;
+}
+.p1-head  h1{
+    font-weight: 400;
+    display: inline-block;
+    color: #ef4238;
+    font-size: 26px;
+    line-height: 26px;
+}
+.p1-head a{
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+.p1-head a:hover{
+    text-decoration: underline;
+}
+.p1-head .all{
+    color: #ef4238;
+    position: absolute;
+    right: 0;
+}
+/*单独定义电影分区小分类导航栏样式*/
+.p1-head ul{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin-bottom: -8px;
+}
+.p1-head li{
+    float: left;
+    padding-left: 10px;
+}
+.p1-head .kind{
+    color: #333333;
+    line-height: 26px;
+}
+/*海报列表，单位海报(item)的样式*/
+.movie-list{
+    margin: -5px 0 20px -25px;
+    padding-top: 0;
+    min-width: 775px;
+}
+.movie-list dd{
+    margin: 30px 0 0 30px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.movie-item{
+    position: relative;
+    border: 1px solid #efefef;
+    margin: -1px;
+    -webkit-transition: all 0.1s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+/*鼠标移上特效原网为白色，不够显眼，改为和页面主题相同的红色，并加入过渡0.2s*/
+.movie-item:hover{
+    box-shadow: 0 0 10px #EF4238,0 5px 13px rgba(0,0,0,.07);
+}
+.movie-poster{
+    background-color: #fcfcfc;
+    width: 160px;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+.movie-poster img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*电影详情样式，渐变背景定位到海报上方覆盖*/
+.poster-bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/home-page/doad.png) repeat-x bottom;  
+}
+.movie-info{
+    color: #fff;
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+}
+/*定义电影名字不换行，字数过多自动省略，溢出文本省略号表示*/
+.movie-name{
+    width: 115px;
+    margin-right: 35px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+}
+/*电影评分样式，分别定义整数integer和分数fraction*/
+.movie-score {
+    color: #ffb400;
+    float: right;
+    margin-right: 10px;
+    font-style: italic
+}
+.movie-score .integer {
+    font-size: 18px;
+}
+.movie-score .fraction {
+    font-size: 14px;
+}
+/*购票按钮样式*/
+.buy-ticket{
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    overflow: hidden;
+}
+.buy-ticket .buyBtn{
+    color: #ef4238;
+    display: block;
+    font-size: 14px;
+    line-height: 39px;
+}
+.buy-ticket:hover .buyBtn{
+    color: #fff;
+    background-color: #ef4238;
+}
+/*“电影版本”显示样式外联main-HF.css*/
+/*3-1-2 主内容第二框体-即将上映,基础样式继承3-1-1*/
+.p2-head h1{
+    color: #2d98f3;
+}
+.p2-head a{
+    color: #2d98f3;
+}
+.movie-wish{
+    font-size: 14px;
+    color: #ffb400;
+    background-color: #fbfbfb;
+    text-align: left;
+    padding-left: 10px;
+    height: 34px;
+    line-height: 34px;
+}
+.movie-presale{
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movie-presale a{
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    color: #999;
+    font-size: 14px;
+}
+.preview{
+    border-right: 1px dotted #e5e5e5;
+}
+/*分别定义是否有“预告片、预售”链接的状态*/
+.preview-on{
+    border-right: 1px dotted #e5e5e5;
+    color: #2d98f3;
+}
+.preview-on:hover{
+    color: #fff;
+    background-color: #2d98f3;
+}
+.presale-on{
+    color: #2d98f3!important;
+}
+.presale-on:hover{
+    color: #fff!important;
+    background-color: #2d98f3;
+}
+.movie-date{
+    height: 34px;
+    text-align: center;
+    border: none;
+    color: #999;
+    font-size: 14px;
+    line-height: 40px;
+}
+/*3-1-3 热播电影模块*/
+.poster-long{
+    width: 350px;
+    height: 220px;
+}
+/*3-2 侧边栏*/
+aside{
+    display: inline-block;
+    float: right;
+    width: 360px;
+    overflow: hidden;
+    margin: 0;
+}
+/*“今日票房”模块*/
+.rank-content{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 23px;
+}
+.tody-boxoffice li{
+    clear: both;
+}
+.rank-content li:hover{
+    background-color: #f7f7f7;
+}
+/*票房最高TOP1样式*/
+.rank-top{
+    overflow: hidden;
+    margin-bottom: 11px;
+    border: 1px solid #efefef;
+}
+.RKT-left{
+    width: 120px;
+    height: 78px;
+    float: left;
+    position: relative;
+}
+.RKT-icon{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 25px;
+    background: url(../img/home-page/RK-top-icon.png) no-repeat;
+    background-size: contain;
+}
+.RK-cover{
+    width: 100%;
+    height: 100%;
+}
+.RKT-right{
+    float: right;
+    display: inline-block;
+    height: 78px;
+    width: 228px;
+    padding-left: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.RKT-movieName{
+    width: 220px;
+    text-overflow: ellipsis;
+    white-space:nowrap;  
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0 10px
+}
+.RK-boxOffice{
+    color: #ef4238;
+    font-size: 13px;
+}
+/*普通排名列表样式*/
+.rank-normal{
+    display: block;
+    height: 35px;
+    width: 350px;
+    line-height: 35px;
+}
+.rank-normal:hover{
+    background-color: #f7f7f7;
+}
+.rank-normal a{
+    display: block;
+    height: 35px;
+    line-height: 35px;
+}
+.rank-normal i{
+    color: #999999;
+    display: inline-block;
+    width: 20px;
+    font-size: 18px;
+    vertical-align: top;
+}
+.rank-normal .sec{
+    color: #ef4238 !important;
+}
+.rank-normal .tri{
+    color: #ef4238 !important;
+}
+.RK-movieName{
+    display: inline-block;
+    max-width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #333;
+    vertical-align: top;
+}
+.BO-normal{
+    float: right;
+}
+/*3-2-2 今日大盘模块*/
+.today-total{
+    margin-top: -45px;
+    margin-bottom: 100px;
+    background-color: #fdfdfd;
+    border: 1px solid #efefef;
+    padding-right: 15px;
+    overflow: hidden;
+}
+.today-total h3{
+    float: left;
+    width: 20px;
+    height: 83px;
+    padding: 10px;
+    color: #fff;
+    background-color: #ef4238;
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+.text-content{
+    font-size: 14px;
+    margin-left: 54px;
+    color: #ef4238;
+    padding-top: 20px;
+}
+.text-content .num{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+.text-content a{
+    float: right;
+    color: #ef4238;
+    margin-top: 10px;
+}
+.text-content a:hover{
+    text-decoration: underline;
+}
+.meta-info{
+    color: #999;
+    margin-top: 6px;
+    font-size: 14px; 
+}
+.meta-info .info-right{
+    float: right;
+}
+/*3-2-3 “最受期待”模块*/
+.RK-expect{
+    margin-top: 80px;
+    width: 360px;
+}
+.RK-expect h1{
+    color: #ffb400
+}
+.rank-all-link{
+    color: #ffb400;
+    float: right;
+}
+.RK-expect .RKT-left{
+    height: 194px;
+    width: 140px;
+}
+.RK-expect .RKT-icon{
+    background: url(../img/home-page/Top-expect.png)
+}
+.RK-expect .RKT-right{
+    height: 194px;
+    width: 208px;
+}
+.RK-expect .RKT-movieName{
+    margin-top: 60px;
+    width: 200px;
+}
+.RK-time{
+    color: #999;
+}
+.RK-wish{
+    margin-top: 8px;
+    font-size: 13px;
+    color: #ffb400;
+}
+/*单独定义小号的排行第二、第三框体*/
+.rank-content li:nth-child(2){
+    margin-right: 16px;
+}
+.rank-SmPane{
+    overflow: hidden;
+    border: 1px solid #efefef;
+    position: relative;
+    width: 170px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+.RK-Num{
+    display: inline-block;
+    position: absolute;
+    padding-left: 4px;
+    width: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #ffb400;
+    font-size: 18px;
+    vertical-align: top;
+}
+.rank-SmPane img{
+    height: 118px;
+}
+.rank-SmPane .RKT-movieName{
+    width: 150px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.rank-SmPane .RK-wish{
+    margin-left: 10px;
+}
+.RK-expect .BO-normal{
+    color: #ffb400
+}
+/*3-2-3 “TOP100模块”*/
+.RK-top100 .RK-boxOffice,.RK-top100 .sec,.RK-top100 .tri{
+    color: #ffb400!important
+}
+.RK-top100 .RKT-icon{
+    background: url(../img/home-page/hot-top.png)
+}
